@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+
+body {
+  font-family: "Single Day", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  margin: 0;
+  background-color: rgb(255, 228, 255);
+  color: #ee4e72;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.center-image {
+  display: block;
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+}
+
+h1 {
+  margin-top: 0px;
+  font-size: 50px;
+}
+
+.buttons {
+  margin-top: 0;
+}
+
+button {
+  padding: 10px 40px;
+  margin: 0 10px;
+  font-size: 20px;
+  font-family: "Single Day", cursive;
+  border: 1px solid #fff;
+  border-radius: 500px;
+  background: #ee4e72;
+  cursor: pointer;
+  color: #fff;
+}
+
+button:hover {
+  scale: 1.05;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 45px;
+}
+
+.close-button {
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px auto;
+  background-color: #ee4e72;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Add background images */
+.background-image-1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 10%;
+  height: 50%;
+  background-image: url("https://i.postimg.cc/C5TZ6bYM/heart2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  animation: fly 2s ease-in-out infinite;
+}
+
+.background-image-2 {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-image: url("https://i.postimg.cc/wvsyV0Cb/heart1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -2;
+  animation: fly 2.5s ease-in-out infinite;
+}
+
+.background-image-3 {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  width: 15%;
+  height: 100%;
+  background-image: url("https://i.postimg.cc/wvsyV0Cb/heart1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -3;
+  animation: fly 2s ease-in-out infinite;
+}
+
+.background-image-4 {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  width: 10%;
+  height: 100%;
+  background-image: url("https://i.postimg.cc/C5TZ6bYM/heart2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -3;
+  animation: fly 3s ease-in-out infinite;
+}
+
+.background-image-5 {
+  position: absolute;
+  top: 70%;
+  right: 10%;
+  width: 25%;
+  height: 100%;
+  background-image: url("https://i.postimg.cc/C5TZ6bYM/heart2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -3;
+  animation: fly 3.5s ease-in-out infinite;
+}
+
+@keyframes fly {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .background-image-4 {
+    top: 55%;
+    right: 15%;
+    width: 15%;
+  }
+
+  .modal {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 45px;
+  }
+}
