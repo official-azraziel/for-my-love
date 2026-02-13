@@ -1,8 +1,8 @@
 const randomTexts = [
-    "u sure mary?",
+    "u sure kimbot?",
     "woah !",
     "don't be silly",
-    "plz mary please ?",
+    "plz kimbot please ?",
     "wow ?",
     "don't make me sad",
     "no no please",
@@ -12,14 +12,14 @@ const randomTexts = [
     "u dont love me ?",
     "don't say no",
     "please dont click me",
-    "mary plz ?",
+    "kimbot plz ?",
     "plz click yes",
     "say yes!",
     "im crying pookie plz",
     "hmp",
     "why not ?",
     "just say maybe",
-    "come on mary 😢",
+    "come on kimbot 😢",
     "pretty please?",
     "clicking no is evil",
     "ur joking right?",
@@ -28,7 +28,7 @@ const randomTexts = [
   ];
   
   document.getElementById("yesButton").addEventListener("click", function () {
-    showModal("OMG I LOVE YOU MARY 💜");
+    showModal("OMG I LOVE YOU KIMBOT 💜");
   });
   
   document.getElementById("noButton").addEventListener("click", function () {
@@ -52,4 +52,5 @@ const randomTexts = [
   
     modal.appendChild(closeModalButton);
   }
+
   
